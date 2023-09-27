@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact</title>
+
+
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+	<script type="text/javascript" src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
+
+
+</script>
+</head>
+<body>
+
+	<div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+	<script type="text/javascript">
+  	const coords = { x: 0, y: 0 };
+const circles = document.querySelectorAll(".circle");
+
+const colors = [
+  "#ffb56b",
+  "#fdaf69",
+  "#f89d63",
+  "#f59761",
+  "#ef865e",
+  "#ec805d",
+  "#e36e5c",
+  "#df685c",
+  "#d5585c",
+  "#d1525c",
+  "#c5415d",
+  "#c03b5d",
+  "#b22c5e",
+  "#ac265e",
+  "#9c155f",
+  "#950f5f",
+  "#830060",
+  "#7c0060",
+  "#680060",
+  "#60005f",
+  "#48005f",
+  "#3d005e"
+];
+
+circles.forEach(function (circle, index) {
+  circle.x = 0;
+  circle.y = 0;
+  circle.style.backgroundColor = colors[index % colors.length];
+});
+
+window.addEventListener("mousemove", function(e){
+  coords.x = e.clientX;
+  coords.y = e.clientY;
+  
+});
+
+function animateCircles() {
+  
+  let x = coords.x;
+  let y = coords.y;
+  
+  circles.forEach(function (circle, index) {
+    circle.style.left = x - 12 + "px";
+    circle.style.top = y - 12 + "px";
+    
+    circle.style.scale = (circles.length - index) / circles.length;
+    
+    circle.x = x;
+    circle.y = y;
+
+    const nextCircle = circles[index + 1] || circles[0];
+    x += (nextCircle.x - x) * 0.3;
+    y += (nextCircle.y - y) * 0.3;
+  });
+ 
+  requestAnimationFrame(animateCircles);
+}
+
+animateCircles();
+  </script>
+
+
+
+	<div class="mobile-header d-md-none d-lg-none">
+    <div class="container">
+    <div class="row ">
+      <div class="col-6">
+            <a href="index.html">
+              <h2>72PIXELS</h2>
+           </a>
+  </div>
+    <div class="col-6 mobile-col">
+  <button class="navbar-toggler mobile-tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+      <div class="line-1">
+      </div>
+      <div class="line-2">
+      </div>
+      <div class="line-3">
+      </div>
+      </span>
+    </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="about.html">About Us</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="services.html">Services</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="portfolio.html">Portfolio</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="contact.html">Contact</a>
+					        </li>
+					      </ul>
+					      <div class="socialicon">
+						      <ul>
+						        <li><i class="fa-brands fa-instagram"></i></li>
+						        <li><i class="fa-brands fa-facebook-f"></i></li>
+						        <li><i class="fa-brands fa-twitter"></i></li>
+						      </ul>
+                </div>
+					    </div>
+          </div>
+      </div>
+    </div>
+  </div>
+	<section class="ab4">
+<a href="javascript:void(100);" id="backToTop" class="back-to-top">
+    <i class="arrow"></i><i class="arrow"></i>
+</a>
+<script type="text/javascript">
+	var btn = $('#backToTop');
+$(window).on('scroll', function() {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: 0
+    }, '300');
+});
+</script>
+	<section class="top-header">
+		<div class="container-fluid" id="dynamic">
+			<div class="row">
+				<div class="col-md-2 my-col">
+					<div class="my-logo">
+						<a href="index.html">72PIXELS</a>	
+					</div>
+				</div>
+
+
+				<div class="col-md-8 menu">
+					<div class="jumps-prevent"></div>
+					<nav class="navbar navbar-expand-lg " >
+					    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="about.html">About Us</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="services.html">Services</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="portfolio.html">Portfolio</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="contact.html">Contact</a>
+					        </li>
+					      </ul>
+					    </div>
+					</nav>
+				</div>
+
+				<div class="col-md-2 my-col-1">
+					<div class="call-us">
+						<i class="fa-solid fa-phone"></i>
+						<a href="" class="number">
+						<div class="call">
+							Call us:
+						</div>
+						<div class="us">
+							123-4356-6789
+						</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+	$(window).scroll(function(){
+    if ($(this).scrollTop() > 50) {
+       $('#dynamic').addClass('newClass');
+    } else {
+       $('#dynamic').removeClass('newClass');
+    }
+});
+</script>
+
+
+
+
+
+
+	<section class="my-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 menu">
+			
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	
+
+
+
+	<section class=" about-us">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+				<div class="about-text">
+					<div class="about-title">
+						<h2>CONTACT US</h2>
+					</div>
+
+					<ul class="list">
+						<li>
+							<a href="index.html">Home</a>
+							<i class="fa-solid fa-angles-right"></i>
+						</li>
+						<li>
+							<a href="">Contact</a>
+						</li>
+					</ul>
+				</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="reason">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="best">
+						<h2>Get in touch any time for </h2>
+						<h2><span class="diffrent">any help!</span></h2>	
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="best-text">
+						<p><span class="diffrent">72PIXELS</span> has been optimized to give your visitors the best experience in terms of UX/UI, with a unique design to deliver all layouts.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="contact-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box-1">
+						<div class="inner-box-1">
+							<div class="inner-box-text">
+								<h5>Contact Us</h5>
+								<h3>Let’s do <span class="diffrent">Working</span> togather!</h3>
+							</div>
+						</div>
+
+						<div class="box-text">
+							<div class="box-text-inner">
+								<i class="fa-solid fa-location-dot"></i>
+								<div class="f-1">
+								<h4>Office Address:</h4>
+								<p>66 Road Broklyn Street,<span class="diffrent"> 600 New York, USA</span></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="box-text">
+							<div class="box-text-inner">
+								<i class="fa-solid fa-phone"></i>
+								<div>
+								<h4> Phone number:</h4>
+								<p>+1300 658 700</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="box-text">
+							<div class="box-text-inner">
+								<i class="fa-regular fa-envelope"></i>
+								<div>
+								<h4>mail Address:</h4>
+								<p>needhelp<span class="diffrent">@company.com</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+				<div class="col-md-4">
+					<div class="contact-img">
+							<img src="images/contact-col.png">
+					</div>
+				</div>
+
+
+
+
+				<div class="col-md-4">
+					<div class="form">
+							<div class="form-title">
+								<h4>Contact us</h4>
+								<p>We work with ambitious leaders who want to define the future, not hide from it</p>
+							</div>
+
+						 <div class="name">
+					       <input type="text" class="Form" name="userName" placeholder="Name" required>
+				       </div>
+			
+						<div class="name">
+							<input type="text" class="Form" name="useremail" placeholder="Email" required>
+						</div>
+
+						<div class="name">
+							<input type="text" class="Form" name="Phone No." placeholder="Phone No." required>
+						</div>
+
+				       <button class="btn5">SUBMIT</button>
+			
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+	<section class="consult">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="consult-text">
+						<h2>Want to consult with our team?</h2>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+	<footer class="my-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="email">
+						<h5>Send <span class="diffrent">email</span></h5>
+						<h4>needhelp<span class="diffrent">@company.com</span></h4>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="logo">
+						<a href="">72PIXELS</a>
+					</div>
+				</div>
+
+	      <div class="col-md-4">
+					<div class="now">
+						<h5>Call <span class="diffrent">now</span></h5>
+						<h4>	123-435<span class="diffrent">6-6789</span></h4>
+					</div>
+					</div>
+			</div>
+
+
+
+			<div class="row my-row">
+				<div class="col-md-3">
+					<div class="About-text">
+						<h4>ABOUT</h4>
+						<p>Welcome to our agency. Lorem ipsum simply free text dolor as sited amet cons cing elit.
+             </p>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="explore">
+						<h4><span class="diffrent">EXPLORE</span></h4>
+						<p>About <span class="diffrent">Company</span></p>
+						<p>Meet the <span class="diffrent">Team</span></p>
+						<p>News & <span class="diffrent">Media</span></p>
+						<p>Contact</p>
+					</div>
+				</div>
+
+        <div class="col-md-3">
+					<div class="contact">
+						<h4>CONTACT</h4>
+						<p>66 Road Broklyn Street,<span class="diffrent"> 600 New York, USA</span></p>
+						<div class="contact-icon">
+							<i class="fa-brands fa-twitter"></i>
+							<i class="fa-brands fa-facebook-f"></i>
+							<i class="fa-brands fa-instagram"></i>
+							<i class="fa-brands fa-pinterest"></i>
+						</div>
+					</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="about-sec">
+							<a href="">72PIXELS</a>
+							<p><span class="diffrent">72PIXELS</span> has been optimized to give your visitors the best experience.</p>
+						</div>
+					</div>
+
+
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
